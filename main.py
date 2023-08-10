@@ -11,9 +11,13 @@ async def run_scheduled_jobs():
         schedule.run_pending()
         await asyncio.sleep(1)
 
-bot = Wechaty()
-bot.on('message', on_message)
-await bot.start()
+async def main():
+    bot = Wechaty()
+    bot.on('message', on_message)
+    await bot.start()
 
-# Run scheduled jobs for reporting
-asyncio.create_task(run_scheduled_jobs())
+    # Run scheduled jobs for reporting
+    await run_scheduled_jobs()
+
+# Run the main function
+asyncio.run(main())
