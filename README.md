@@ -10,26 +10,33 @@
 
 ## 安装与运行
 
-### 依赖库
+### 1. 克隆仓库
 
-项目需要以下Python库：
+```bash
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
+```
 
-- `requests`
+### 2. 安装依赖库
+
+项目需要以下JavaScript库：
+
+- `axios`
 - `wechaty`
-- `schedule`
+- `wechaty-puppet-wechat`
 
 可以通过以下命令安装依赖库：
 
 ```bash
-pip install requests wechaty schedule
+npm install axios wechaty wechaty-puppet-wechat
 ```
 
-### 运行项目
+### 3. 运行项目
 
 在安装了所有依赖库后，可以通过以下命令运行项目：
 
 ```bash
-python main.py
+node main.js
 ```
 
 ## 如何使用
